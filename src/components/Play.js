@@ -35,10 +35,10 @@ export default class Play extends Component {
 							<button onClick={this.handleSearch}>Show Joke</button>
 						</div>
 						<p>or</p>
-						<a className="randome-joke-button" onClick={this.handleRandom}>Gimme Random Joke</a>
+						<button className="randome-joke-button" onClick={this.handleRandom}>Gimme Random Joke</button>
 					</div>
 					<div className="play-block2">
-						<a id="jokeText" className="joke-text">Awesome Chuck Norris Jokes</a>
+						<p id="jokeText" className="joke-text">Awesome Chuck Norris Jokes</p>
 						<img src={chiak} alt="chiakas" />
 					</div>
 				</section>
