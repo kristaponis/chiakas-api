@@ -7,6 +7,7 @@ Visit live @ [chiakas.herokuapp.com](https://chiakas.herokuapp.com)
 -   HTML
 -   SCSS
 -   React
+-   React Router
 -   Express
 -   Babel
 -   Axios
