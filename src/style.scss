@@ -1,0 +1,196 @@
+@import "~normalize.css";
+@import "vars-mixins";
+
+
+/* ================================= 
+  Global
+==================================== */
+body {
+    font-family: sans-serif;
+    background: linear-gradient(125deg, #fafafa 0%, #bdbdbd 100%) fixed;
+    color: $dark-gray;
+    text-align: center;
+    a, a:active, a:visited, a:hover {
+        text-decoration: none;
+    }
+}
+
+
+/* ================================= 
+  Header Component
+==================================== */
+.header-dark {
+    @include header-style;
+    background-color: $dark-gray;
+    .title1 {
+        color: $light-gray;
+    }
+}
+
+.header-light {
+    @include header-style;
+    .title2 {
+        color: $dark-gray;
+    }
+    .title2-color {
+        @include color;
+        &:hover {
+            @include color-reverse;
+        }
+    }
+}
+
+
+/* ================================= 
+  Home Component
+==================================== */
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 50px 50px 50px;
+    @include desktop {
+        flex-direction: row;
+        justify-content: center;
+    }
+    img {
+        align-self: center;
+        width: 300px;
+        @include tablet {
+            margin-top: 64px;
+        }
+    }
+    .linkas {
+        font-size: 32px;
+        margin: 50px;
+        padding: 32px;
+        border: 2px solid $dark-gray;
+        @include color;
+        &:hover {
+            @include color-reverse;
+        }
+        @include desktop {
+            margin-right: 200px;
+        }
+    }
+}
+
+
+/* ================================= 
+  Play Component
+==================================== */
+.play {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 16px;
+    .play-block1 {
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+        flex-wrap: wrap;
+        @include desktop {
+            flex-direction: row;
+        }
+        .randome-joke-button {
+            margin: 8px;
+            padding: 10px;
+            outline: none;
+            border: none;
+            background-color: $light-gray;
+            color: $dark-gray;
+            &:active {
+                background-color: $dark-gray;
+                color: $light-gray;
+            }
+            @include desktop {
+                &:hover {
+                    background-color: $dark-gray;
+                    color: $light-gray;
+                }
+            }
+        }
+        p {
+            font-size: 20px;
+            margin: 8px;
+            padding: 8px;
+        }
+        .forma {
+            margin: 8px;
+            .form-input {
+                padding: 10px;
+                outline: none;
+                background-color: $light-gray;
+                color: $dark-gray;
+                border: none;
+                border-radius: 0;
+            }
+            button {
+                margin-top: 16px;
+                padding: 10px;
+                outline: none;
+                background-color: $light-gray;
+                color: $dark-gray;
+                border: none;
+                &:active {
+                    background-color: $dark-gray;
+                    color: $light-gray;
+                }
+                @include desktop {
+                    margin-top: 0;
+                    &:hover {
+                        background-color: $dark-gray;
+                        color: $light-gray;
+                    }
+                }
+            }
+        }
+    }
+    .play-block2 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        @include desktop {
+            flex-direction: row;
+            margin-top: 32px;
+        }
+        .joke-text {
+            font-size: 23px;
+            margin: 32px;
+            width: 300px;
+            background-color: transparent;
+            border: none;
+            @include desktop {
+                align-self: center;
+            }
+        }
+        img {
+            align-self: center;
+            width: 300px;
+            height: 370px;
+        }
+    }
+}
+
+
+/* ================================= 
+  NotFound Component
+==================================== */
+.not-found {
+    display: flex;
+    justify-content: center;
+    img {
+        margin: 64px;
+        width: 300px;
+        height: 300px;
+        @include tablet {
+            width: 370px;
+            height: 370px;
+        }
+        @include desktop {
+            width: 450px;
+            height: 450px;
+        }
+    }
+}
