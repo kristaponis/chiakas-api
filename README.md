@@ -6,6 +6,7 @@ Visit live @ [chiakas.herokuapp.com](https://chiakas.herokuapp.com)
 ## Teach-stack
 -   HTML
 -   SCSS
+-   Flexbox
 -   React
 -   React Router
 -   Express

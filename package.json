@@ -1,7 +1,7 @@
 {
   "name": "chiakas",
   "version": "1.0.0",
-  "description": "chiakas api app",
+  "description": "chiakas-api app",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server",
