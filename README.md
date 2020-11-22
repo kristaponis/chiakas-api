@@ -9,8 +9,6 @@ Simple API implementation from [chucknorris.io](https://api.chucknorris.io)
 
 Search Chuck Norris jokes by word or get random joke.
 
-Visit live @ [chiakas.herokuapp.com](https://chiakas.herokuapp.com)
-
 ## Teach-stack
 -   HTML
 -   SCSS
